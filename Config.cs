@@ -8,7 +8,6 @@ namespace Halite
         public int MapWidth { get; private set; }
         public int MapHeight { get; private set; }
 
-        public int StrengthToMoveToNeighbour => 25;
         
         public int Turn { get; private set; }
 

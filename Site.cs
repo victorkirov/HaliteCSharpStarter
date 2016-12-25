@@ -26,8 +26,6 @@ namespace Halite
         public Site Bottom { get; set; }
         public Site Left { get; set; }
         public Site Right { get; set; }
-
-        public List<Site> Neighbours;
         
         public Site(int x, int y)
         {
@@ -70,8 +68,6 @@ namespace Halite
             Bottom = bottom;
             Left = left;
             Right = right;
-
-            Neighbours = new List<Site> { Top, Bottom, Left, Right };
         }
     }
 

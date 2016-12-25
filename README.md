@@ -42,6 +42,8 @@ This is a singleton which exposes the following properties:
 * MapHeight [int] - the height of the playing grid
 * Turn [int] - the current turn
 
+To access these properties anywhere in the app type `Config.Get().<propertyName>`
+
 ## Using the Visual Studio Debugger
 If you would like to use the powerful, built in VS debugger to debug your code then this is one of the many solutions but it's the one I prefer and use most.
 

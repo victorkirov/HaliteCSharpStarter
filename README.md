@@ -1,5 +1,9 @@
 # HaliteCSharpStarter
-A slightly more powerful starter package for Halite in C#
+A slightly more powerful starter package for Halite in C# based on the original community package.
+
+To use, download the Halite executable form https://halite.io/downloads.php and execute `runGame.bat`.
+
+The package contains a basic random bot as the player and a random bot as the opponent (RandomBot.cs).
 
 ## Important bits
 ### MyBot.cs

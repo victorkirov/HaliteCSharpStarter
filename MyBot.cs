@@ -1,5 +1,5 @@
 ﻿using System;
-using System.Linq;
+using System.Collections.Generic;
 
 namespace Halite
 {
@@ -21,10 +21,16 @@ namespace Halite
             {
                 Networking.GetFrame(map); // Update the map
 
-                var moves = map.GetMySites().Select(site => new Move
+                var moves = new List<Move>();
+
+                foreach (var site in map.GetMySites())
                 {
-                    Site = site, Direction = (Direction) random.Next(5)
-                }).ToList();
+                    moves.Add(new Move
+                    {
+                        Site = site,
+                        Direction = (Direction)random.Next(5)
+                    });
+                }
 
                 Networking.SendMoves(moves); // Send moves
             }

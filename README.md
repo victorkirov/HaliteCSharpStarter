@@ -16,6 +16,11 @@ This is the map corresponding to the playing grid. It consists of an x by y arra
 
 A useful method exposed by the `map` is `map.GetMySites()` which returns a list of sites of which you are the owner.
 
+Another useful method is `GetSites(<func>)`. This allows you to retrieve all sites which match a particular filter. 
+Example usage:
+
+*To get all enemy sites use:* `map.GetSites(site=>site.IsEnemy())`
+
 ### Site.cs
 This corresponds to a single block on the map grid. It has the following properties:
 

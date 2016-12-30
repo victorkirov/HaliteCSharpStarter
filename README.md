@@ -54,8 +54,9 @@ If you would like to use the powerful, built in VS debugger to debug your code t
 
 1. Add a reference `using System.Diagnostics;` in MyBot.cs
 2. At the beginning of the main method in MyBot.cs, add the following line: `while(!Debugger.IsAttached);`
-3. Add a `-t` flag at the end of the execution of the simulation in runGame.bat to disable the timeout.
-4. Run the simulation. At this point the simulation should freeze on the initialisation of the bot.
-5. Ensure that you have set a break point somewhere in your code.
-6. In Visual Studio, in the toolbar click on `Debug>Attach to Process` and select MyBot.exe from the list
-7. Debug to your heart's desire.
+3. At the end of the first line of the batch file which builds your bot, add ` /debug:full` so that it builds with the debug constant defined.
+4. Add a `-t` flag at the end of the execution of the simulation in runGame.bat to disable the timeout.
+5. Run the simulation. At this point the simulation should freeze on the initialisation of the bot.
+6. Ensure that you have set a break point somewhere in your code.
+7. In Visual Studio, in the toolbar click on `Debug>Attach to Process` and select MyBot.exe from the list
+8. Debug to your heart's desire.
